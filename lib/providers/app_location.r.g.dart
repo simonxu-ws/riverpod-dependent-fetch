@@ -1,0 +1,25 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'app_location.r.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$appLocationHash() => r'4e4aa7cd61266778afd2217577c5b3958e241619';
+
+/// See also [AppLocation].
+@ProviderFor(AppLocation)
+final appLocationProvider = AutoDisposeAsyncNotifierProvider<AppLocation,
+    Map<String, dynamic>>.internal(
+  AppLocation.new,
+  name: r'appLocationProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$appLocationHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef _$AppLocation = AutoDisposeAsyncNotifier<Map<String, dynamic>>;
+// ignore_for_file: type=lint
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
