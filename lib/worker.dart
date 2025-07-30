@@ -13,6 +13,7 @@ class WorkerWidget extends HookConsumerWidget {
     final location = ref.watch(locationProvider).valueOrNull;
     return appLocation.when(
       data: (appLocation) => Row(
+        spacing: 12,
         children: [
           Text('$location'),  
           Text('${appLocation['timezone']}'),

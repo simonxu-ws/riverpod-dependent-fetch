@@ -6,12 +6,12 @@ part of 'location_provider.r.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$locationListHash() => r'831e4a6427bdebc3203f926c37239a783af1b809';
+String _$locationListHash() => r'5d1395bcd63b2b4b369d8ca2d7a9288728fef655';
 
 /// See also [LocationList].
 @ProviderFor(LocationList)
 final locationListProvider =
-    AutoDisposeAsyncNotifierProvider<LocationList, List<String>>.internal(
+    AsyncNotifierProvider<LocationList, List<String>>.internal(
   LocationList.new,
   name: r'locationListProvider',
   debugGetCreateSourceHash:
@@ -20,13 +20,12 @@ final locationListProvider =
   allTransitiveDependencies: null,
 );
 
-typedef _$LocationList = AutoDisposeAsyncNotifier<List<String>>;
-String _$locationHash() => r'282f59748c0496c742ed78220feb5a78d8e1bf57';
+typedef _$LocationList = AsyncNotifier<List<String>>;
+String _$locationHash() => r'3d52273a997e7d00c369c0b6ad30e3e9a2bf7da2';
 
 /// See also [Location].
 @ProviderFor(Location)
-final locationProvider =
-    AutoDisposeAsyncNotifierProvider<Location, String>.internal(
+final locationProvider = AsyncNotifierProvider<Location, String>.internal(
   Location.new,
   name: r'locationProvider',
   debugGetCreateSourceHash:
@@ -35,6 +34,6 @@ final locationProvider =
   allTransitiveDependencies: null,
 );
 
-typedef _$Location = AutoDisposeAsyncNotifier<String>;
+typedef _$Location = AsyncNotifier<String>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

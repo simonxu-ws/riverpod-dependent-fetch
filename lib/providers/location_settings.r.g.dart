@@ -6,7 +6,7 @@ part of 'location_settings.r.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$locationSettingsHash() => r'460aba94ef1af484b9899084d618395c74df1b6f';
+String _$locationSettingsHash() => r'18f8559695326aa4381a9cda4366254d2f1f3ecc';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -30,7 +30,7 @@ class _SystemHash {
 }
 
 abstract class _$LocationSettings
-    extends BuildlessAutoDisposeAsyncNotifier<Map<String, dynamic>> {
+    extends BuildlessAsyncNotifier<Map<String, dynamic>> {
   late final ({String locationId}) params;
 
   FutureOr<Map<String, dynamic>> build(
@@ -81,8 +81,8 @@ class LocationSettingsFamily extends Family<AsyncValue<Map<String, dynamic>>> {
 }
 
 /// See also [LocationSettings].
-class LocationSettingsProvider extends AutoDisposeAsyncNotifierProviderImpl<
-    LocationSettings, Map<String, dynamic>> {
+class LocationSettingsProvider
+    extends AsyncNotifierProviderImpl<LocationSettings, Map<String, dynamic>> {
   /// See also [LocationSettings].
   LocationSettingsProvider(
     ({String locationId}) params,
@@ -138,8 +138,8 @@ class LocationSettingsProvider extends AutoDisposeAsyncNotifierProviderImpl<
   }
 
   @override
-  AutoDisposeAsyncNotifierProviderElement<LocationSettings,
-      Map<String, dynamic>> createElement() {
+  AsyncNotifierProviderElement<LocationSettings, Map<String, dynamic>>
+      createElement() {
     return _LocationSettingsProviderElement(this);
   }
 
@@ -159,15 +159,14 @@ class LocationSettingsProvider extends AutoDisposeAsyncNotifierProviderImpl<
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
-mixin LocationSettingsRef
-    on AutoDisposeAsyncNotifierProviderRef<Map<String, dynamic>> {
+mixin LocationSettingsRef on AsyncNotifierProviderRef<Map<String, dynamic>> {
   /// The parameter `params` of this provider.
   ({String locationId}) get params;
 }
 
 class _LocationSettingsProviderElement
-    extends AutoDisposeAsyncNotifierProviderElement<LocationSettings,
-        Map<String, dynamic>> with LocationSettingsRef {
+    extends AsyncNotifierProviderElement<LocationSettings, Map<String, dynamic>>
+    with LocationSettingsRef {
   _LocationSettingsProviderElement(super.provider);
 
   @override
