@@ -13,7 +13,6 @@ class LocationSettings extends _$LocationSettings {
     final locationId = params.locationId;
     await Future.delayed(const Duration(seconds: 1));
     return {
-      'locationId': locationId,
       'timezone': locationId == 'location1' ? 'America/New_York' : 'America/Los_Angeles',
     };
   }
